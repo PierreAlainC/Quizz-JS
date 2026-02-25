@@ -1,4 +1,4 @@
-# 🎉 Mini Quiz JavaScript – Oui, encore un projet d’un dev junior…
+# 🎉 Mini Quiz JavaScript
 
 Eh oui… encore un petit projet d’un autre dev junior 👀  
 Du JavaScript ??? Ok, pourquoi pas !  
