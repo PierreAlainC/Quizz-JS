@@ -35,7 +35,7 @@ Un mini-projet, simple mais complet, parfait pour monter en compétences.
 1. Clone le repo :
 
    ```bash
-   git clone https://github.com/ton-pseudo/nom-du-repo.git
+   git clone https://github.com/PierreAlainC/Quizz-JS.git
    ```
 
 Ouvre le dossier :
