@@ -1,0 +1,16 @@
+# --- Fichiers système locaux ---
+.DS_Store
+Thumbs.db
+
+# --- VS Code ---
+.vscode/
+
+# --- Node (au cas où on ajoute un serveur ou un bundler plus tard) ---
+node_modules/
+
+# --- Builds au cas où ---
+dist/
+build/
+
+# --- Anciennes sources inutilisées ---
+src/
