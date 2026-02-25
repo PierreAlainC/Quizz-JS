@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+}
+#container{
+    height: 100vh;
+}
+
+.theme-blue{
+    background-color: #08123e;
+}
+
+.theme-pink{
+    background-color: pink;
+}
+
+#theme {
+    background: aliceblue;
+    color: #08123e;
+    border-width: 0;
+}
+
+#theme:hover{
+    background: pink;
+    color: rgb(245, 101, 125);
+}
+
+#app{
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.blue {
+    background: #c6d7ff;
+}
+
+.pink {
+    background: rgb(245, 101, 125);
+}
+
+#scoreboard{
+    color: #08123e;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #08123e;
+    padding-bottom: 30px;
+}
+
+#scoreboard h1, #scoreboard h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#scoreboard h2{
+    display: none;
+}
+
+.quiz{
+    padding: 30px 10px;
+    display: none;
+}
+
+#question{
+    margin: 12px;
+    font-size: 18px;
+    color: #08123e;
+    font-weight: 600;
+}
+
+#category{
+    margin: 12px;
+    font-size: 18px;
+    color: #08123e;
+    font-weight: 600;
+}
+
+#category-buttons{
+    margin: 12px;
+    font-size: 18px;
+    color: #08123e;
+    font-weight: 600;
+}
+
+.btn{
+    background: aliceblue;
+    color: #08123e;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #08123e;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4ssss;
+}
+
+.btn:hover:not([disabled]){
+    background: #08123e;
+    color: aliceblue;
+}
+
+/* .btn:disabled{
+    cursor: no-drop;
+} */
+
+#next-btn{
+    background-color: #08123e;
+    color: aliceblue;
+    font-weight: 500;
+    width: 150px;
+    border: 1px solid #08123e;
+    padding: 15px;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#next-btn:hover:not([disabled]){
+    background: aliceblue;
+    color:#08123e;
+    border: 1px solid #08123e;
+}
+
+/* #next-btn:disabled{
+    cursor: no-drop;
+} */
+
+#back-categories {
+    background-color: #08123e;
+    color: aliceblue;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct{
+    background: rgb(140, 226, 140);
+}
+
+.incorrect{
+    background: rgb(253, 111, 111);
+}
+
+/* #loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #08123e;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */

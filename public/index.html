@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Quizz - Base</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Our custom styled css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- jolie interface pour pop-up personnalisée-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="container" class="theme-blue">
+        <button id="theme">Switch theme </button>
+        <!-- This is our game "Quizz" -->
+        <div id="app" class="blue">
+            <div id="scoreboard">        
+                <!-- Name of our quiz -->
+                <h1>It's Quizz time!</h1>
+                <!-- Previous score-->
+                <h2 id="last-score">Votre dernier score est : ???</h2>
+            </div>
+            <!-- This is where the category buttons will be displayed at the begining of the game-->
+            <div id="category-buttons"></div>
+            <!-- This is the actual quiz, composed with the question and the answer buttons -->
+            <div class="quiz">
+                <!-- This is where the question will be displayed -->
+                <div>
+                    <!-- The current category selected-->
+                    <h2 id="category">The category</h2>
+                    <!-- The current question-->
+                    <h2 id="question">The question</h2>
+                </div>
+                <!-- This is where the answer buttons will be displayed -->
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <div>
+                    <button id="next-btn">Next Question</button>
+                </div>
+            </div>
+            <div>
+                <button id="back-categories">Retour aux Catégories</button>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <!-- Let's include all the apis functions first! -->
+    <script type="module" src="./API/openTriviaDB.js" defer></script>
+    <!-- Don't forget the main JavaScript's script for the logic! Now it's linked -->
+    <script type="module" src="./script.js" defer></script>
+</body> 
+</html>
