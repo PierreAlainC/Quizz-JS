@@ -41,7 +41,7 @@ Un mini-projet, simple mais complet, parfait pour monter en compétences.
 Ouvre le dossier :
 
 ```bash
-cd nom-du-repo/public
+cd QUIZZ/public
 ```
 
 Lance ```index.html``` dans ton navigateur
