@@ -1,5 +1,4 @@
-# 🎉 Mini Quiz JavaScript
-
+# 🎉 Mini Quiz JavaScript 
 Eh oui… encore un petit projet d’un autre dev junior 👀  
 Du JavaScript ??? Ok, pourquoi pas !  
 Ce quiz est surtout un prétexte pour pratiquer, progresser et remplir mon GitHub avec des projets funs et concrets.

@@ -18,7 +18,7 @@ const loader = document.getElementById("loader");
 const app = document.getElementById("app");
 
 //SWITCH THEME
-const switchThemeButton = document.getElementById("theme");
+const switchThemeButton = document.querySelector(".button-theme-blue");
 
 /* function myThemes(){
     themes.forEach(theme => {
@@ -52,7 +52,7 @@ function showCategories() {
     resetState(); 
     if(score > 0){
         lastScoreElement.style.display = "block";
-        lastScoreElement.innerHTML = `Votre dernier score est : ${score}/${selectedQuestions.length} (${achievement})`;
+        lastScoreElement.innerHTML = `Votre dernier score est de ${score}/${selectedQuestions.length} (soit ${achievement})`;
     }
     // The quiz is Hidden until a Category, a Difficulty is selected
     quizElement.style.display = "none";
@@ -241,7 +241,7 @@ function showScore() {
     resetState();
     calculateAchievement();
     questionElement.style.display = "block";
-    questionElement.innerHTML = `Vous avez obtenu ${score} sur ${selectedQuestions.length} !`;
+    questionElement.innerHTML = `Vous avez obtenu ${score} bonne(s) réponse(s) sur ${selectedQuestions.length} !`;
     nextButton.innerHTML = "Voulez-vous rejouer?";
     nextButton.style.display = "block";
 }
@@ -302,8 +302,10 @@ function switchTheme() {
     if (container.classList.contains("theme-blue")) {
         container.classList.replace("theme-blue", "theme-pink");
         app.classList.replace("blue", "pink");
+        switchThemeButton.classList.replace("button-theme-blue","button-theme-pink");
     } else {
         container.classList.replace("theme-pink", "theme-blue");
         app.classList.replace("pink", "blue");
+        switchThemeButton.classList.replace("button-theme-pink","button-theme-blue");
     }
 }

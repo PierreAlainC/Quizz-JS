@@ -3,14 +3,14 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-
 }
 
 body {
     height: 100%;
 }
 #container{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .theme-blue{
@@ -18,18 +18,35 @@ body {
 }
 
 .theme-pink{
-    background-color: pink;
+    background-color: rgb(245, 101, 125);
 }
 
-#theme {
-    background: aliceblue;
-    color: #08123e;
+#theme{
     border-width: 0;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    font-weight: 900;
 }
 
-#theme:hover{
-    background: pink;
+.button-theme-blue {
+    color: #08123e;
+    background: #c6d7ff;
+}
+
+.button-theme-pink{
     color: rgb(245, 101, 125);
+    background: pink;
+}
+
+.button-theme-blue:hover{
+    background: rgb(245, 101, 125);
+    color: pink;
+}
+
+.button-theme-pink:hover{
+    background: #08123e;
+    color: aliceblue;
 }
 
 #app{
@@ -45,7 +62,7 @@ body {
 }
 
 .pink {
-    background: rgb(245, 101, 125);
+    background: pink;
 }
 
 #scoreboard{
